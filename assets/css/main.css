@@ -116,6 +116,10 @@ html {
     cursor: pointer;
 }
 
+.duration{
+    min-width: 36px;
+}
+
 .volume{
     transform: rotate(270deg);
     position: absolute;
@@ -123,7 +127,7 @@ html {
     height: 6px;
     background-color: white;
     border-radius: 12px;
-    right: 0;
+    right: -28px;
     bottom: 102px;
     display: none;
 }
