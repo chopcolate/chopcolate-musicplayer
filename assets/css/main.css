@@ -120,6 +120,14 @@ html {
     min-width: 36px;
 }
 
+.volume-control{
+    display: flex;
+    flex-direction: column;
+    min-width: 32px;
+    align-items: center;
+    position: relative;
+}
+
 .volume{
     transform: rotate(270deg);
     position: absolute;
@@ -127,7 +135,6 @@ html {
     height: 6px;
     background-color: white;
     border-radius: 12px;
-    right: -28px;
     bottom: 102px;
     display: none;
 }
@@ -149,7 +156,7 @@ html {
     display: none;
 }
 
-.volume-control:hover ~.volume, .volume:hover {
+.volume-control:hover .volume, .volume:hover {
     display:block;
 }
 
@@ -228,4 +235,37 @@ html {
 
 .option{
     font-size: 20px;
+}
+
+
+@media only screen and (max-width : 739px) {
+    .player, .playlist{
+        width: 90%;
+    }
+
+    .song .title{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .song .author{
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (min-width : 740px) and (max-width : 1023px) {
+    .player, .playlist{
+        width: 70%;
+    }
+
+    .song .title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .song .author{
+        font-size: 12px;
+    }
+
 }
