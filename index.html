@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/js/script.js">
+    <title>Apple Music</title>
+</head>
+<body>
+    <div class="main">
+
+        <div class="player">
+
+            <div class="title">
+                <p>Now playing:</p>
+                <h2 class="song-name">Unknown</h2>
+            </div>
+
+            <div class="track-img">
+                
+            </div>
+
+            <div class="navigation">
+
+                <div class="btn replay">
+                    <i class="fas fa-redo"></i>
+                </div>
+
+                <div class="btn previous">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+
+                <div class="btn play-pause">
+                    <i class="fas fa-pause icon-pause active"></i>
+                    <i class="fas fa-play icon-play"></i>
+                </div>
+
+                <div class="btn next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+
+                <div class="btn suffle">
+                    <i class="fas fa-random"></i>
+                </div>
+
+            </div>
+            <div class="control">
+
+                <input type="range" class="progress" value = "0" step = "0.001" min = "0" max = "100">
+                <div class="duration"></div>
+                <div class="volume-control">
+                    <i class="fas fa-volume-up icon-volume"></i>
+                    <i class="fas fa-volume-mute icon-mute hidden"></i>
+                </div>
+                <input type="range" class="volume" value = "100" step = "0.001" min = "0" max = "100">
+            </div>
+            
+            <audio src="" class="audio" preload="metadata"></audio>
+
+        </div>
+
+        <div class="playlist"></div>
+    </div>
+
+
+    <script src = './assets/js/script.js'></script>
+</body>
+</html>
